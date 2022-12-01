@@ -3,6 +3,7 @@ package com.example.data.di
 import com.example.data.api.Api
 import com.example.data.repository.CoinRepositoryImpl
 import com.example.domain.common.Constants.BASE_URL
+import com.example.domain.repository.CoinRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -26,7 +27,7 @@ object DataModule {
 
     @Provides
     @Singleton
-    fun provideCoinRepository(api: Api): CoinRepositoryImpl {
+    fun provideCoinRepository(api: Api): CoinRepository {
         return CoinRepositoryImpl(api)
     }
 }

@@ -1,10 +1,10 @@
-package com.example.data.ui
+package com.example.movetoplayversiontwo.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
-import com.example.data.adapter.CoinRecyclerAdapter
+import com.example.movetoplayversiontwo.adapter.CoinRecyclerAdapter
 import com.example.movetoplayversiontwo.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         viewModel.state.observe(this) {
             if (!it.isLoading) {
                 binding.progressBar.visibility = View.INVISIBLE

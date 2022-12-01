@@ -1,11 +1,11 @@
-package com.example.data.ui
+package com.example.movetoplayversiontwo.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.domain.common.Resource
-import com.example.data.model.CoinListState
+import com.example.movetoplayversiontwo.model.CoinListState
 import com.example.domain.use_case.GetCoinsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn

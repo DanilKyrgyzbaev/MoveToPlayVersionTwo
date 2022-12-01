@@ -1,4 +1,4 @@
-package com.example.data.model
+package com.example.movetoplayversiontwo.model
 
 import com.example.domain.model.Coin
 

@@ -1,4 +1,4 @@
-package com.example.data.adapter
+package com.example.movetoplayversiontwo.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

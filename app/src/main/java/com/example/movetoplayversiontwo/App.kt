@@ -1,4 +1,4 @@
-package com.example.data
+package com.example.movetoplayversiontwo
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
